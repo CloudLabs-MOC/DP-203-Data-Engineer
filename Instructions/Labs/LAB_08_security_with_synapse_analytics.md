@@ -105,7 +105,7 @@ It is recommended to store any secrets that are part of your pipeline in Azure K
 
 3. Create a secret, with the name `PipelineSecret` and assign it a secret value of `IsNotASecret`, and select the **Create** button.
 
-   ![The Create a secret form is displayed populated with the specified values.](images/DP-203-2.png)
+   ![The Create a secret form is displayed populated with the specified values.](images/DP-203-3.png)
 
 4. Open the secret that you just created, drill into the current version, and copy the value in the Secret Identifier field. Save this value in a text editor, or retain it in your clipboard for a future step.
 
