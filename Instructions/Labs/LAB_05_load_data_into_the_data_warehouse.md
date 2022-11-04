@@ -529,4 +529,4 @@ Complete these steps to free up resources you no longer need.
 
     ![The pause button is highlighted on the dedicated SQL pool.](images/pause-dedicated-sql-pool.png "Pause")
 
-3. When prompted, select **Pause**.7. In Synapse Studio, select the **Manage** hub.
+3. When prompted, select **Pause**.
