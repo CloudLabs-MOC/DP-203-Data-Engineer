@@ -43,7 +43,7 @@ When you query Parquet files using serverless SQL pools, you can explore the dat
 
     ![The cell output is displayed.](images/sql-on-demand-output.png "SQL output")
 
-4. Modify the SQL query to perform aggregates and grouping operations to better understand the data. Replace the query with the following, replacing *SUFFIX* with the unique suffix for your Azure Data Lake store and making sure that the file path in the OPENROWSET function matches the current file path:
+4. Modify the SQL query to perform aggregates and grouping operations to better understand the data. Replace the query with the following, replacing **SUFFIX** with the unique suffix for your Azure Data Lake store and making sure that the file path in the OPENROWSET function matches the current file path:
 
     ```sql
     SELECT
@@ -381,7 +381,7 @@ To test out the permissions, we will add your own account to the groups.
 
     ![Add role assignment is highlighted.](images/add-role-assignment.png "Add role assignment")
 
-8. For **Role**, search **Storage Blob Data Owner**, then select **Next**.
+8. For **Role**, search and select **Storage Blob Data Owner**, then select **Next**.
 
 9. In the **Members** screen, click on **+ Select Members** and search for `tailwind` and select your **tailwind-history-owners** group in the results. Then click on **Review + Assign**, and click on **Review + Assign** again.
 
@@ -459,7 +459,7 @@ To test out the permissions, we will add your own account to the groups.
     df.write.parquet('abfss://wwi-02@asadatalakeSUFFIX.dfs.core.windows.net/sale-small/Year=2016/Quarter=Q4/Month=12/Day=20161231/sale-small-20161231-snappy-test.parquet')
     ```
 
-8. Run the new cell you just added. You should see a **403 error** in the output.
+8. Run the new cell you just added. You should see a **403/401 error** in the output.
 
     ![The error is displayed in Cell 2's output.](images/notebook-error.png "Notebook error")
 
