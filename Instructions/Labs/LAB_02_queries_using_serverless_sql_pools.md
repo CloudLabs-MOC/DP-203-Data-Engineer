@@ -62,7 +62,7 @@ When you query Parquet files using serverless SQL pools, you can explore the dat
 
     ![The cell output is displayed.](images/sql-on-demand-output.png "SQL output")
 
-4. Modify the SQL query to perform aggregates and grouping operations to better understand the data. Replace the query with the following, replacing *SUFFIX* with the unique suffix for your Azure Data Lake store and making sure that the file path in `OPENROWSET` matches the current file path:
+4. Modify the SQL query to perform aggregates and grouping operations to better understand the data. Replace the query with the following, replacing **SUFFIX** with the unique suffix for your Azure Data Lake store and making sure that the file path in `OPENROWSET` matches the current file path:
 
     ```sql
     SELECT
@@ -72,9 +72,10 @@ When you query Parquet files using serverless SQL pools, you can explore the dat
             SUM(Quantity) AS [(sum) Quantity]
     FROM
         OPENROWSET(
-            BULK 'https://asadatalakeSUFFIX.dfs.core.windows.net/wwi-02/sale-small/Year=2019/Quarter=Q4/Month=12/Day=20191231/sale-small-20191231-snappy.parquet',
-            FORMAT='PARQUET'
+            BULK 'https://asadatalake781275.dfs.core.windows.net/wwi-02/sale-small/Year=2019/Quarter=Q4/Month=12/Day=20191231/sale-small-20191231-snappy.parquet',
+            FORMAT = 'PARQUET'
         ) AS [r] GROUP BY r.TransactionDate, r.ProductId;
+
     ```
 
     ![The T-SQL query above is displayed within the query window.](images/sql-serverless-aggregates.png "Query window")
@@ -86,9 +87,11 @@ When you query Parquet files using serverless SQL pools, you can explore the dat
         COUNT(*)
     FROM
         OPENROWSET(
-            BULK 'https://asadatalakeSUFFIX.dfs.core.windows.net/wwi-02/sale-small/Year=2019/*/*/*/*',
-            FORMAT='PARQUET'
+            BULK 'https://asadatalake781275.dfs.core.windows.net/wwi-02/sale-small/Year=2019/*/*/*/*',
+            FORMAT = 'PARQUET'
         ) AS [r];
+
+
     ```
 
     > Notice how we updated the path to include all Parquet files in all subfolders of `sale-small/Year=2019`.
