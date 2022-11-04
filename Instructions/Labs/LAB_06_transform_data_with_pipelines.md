@@ -143,13 +143,13 @@ In this section, you'll create datasets for the SQL tables that will serve as da
 
     - **Name**: Enter `asal400_customerprofile_cosmosdb`.
     - **Linked service**: Select **asacosmosdb01**.
-    - **Collection**: Select **OnlineUserProfile01**.
+    - **Container**: Select **OnlineUserProfile01**.
 
-        ![New Azure Cosmos DB dataset.](images/create-cosmos-db-dataset.png "New Cosmos DB dataset")
+        ![New Azure Cosmos DB dataset.](images/cosmos-db-dataset-preview-data1.png "New Cosmos DB dataset")
 
-5. After creating the dataset, select **Preview data** under its **Connection** tab.
+5. After creating the dataset, select **Preview data** under its **Container** tab.
 
-    ![The preview data button on the dataset is highlighted.](images/cosmos-dataset-preview-data-link.png "Preview data")
+    ![The preview data button on the dataset is highlighted.](images/cosmos-dataset-preview-data-link1.png "Preview data")
 
 6. Preview data queries the selected Azure Cosmos DB collection and returns a sample of the documents within. The documents are stored in JSON format and include fields for **userId**, **cartId**, **preferredProducts** (an array of product IDs that may be empty), and **productReviews** (an array of written product reviews that may be empty).
 
