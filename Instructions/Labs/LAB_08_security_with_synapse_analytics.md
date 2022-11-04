@@ -71,7 +71,7 @@ When dealing with connectivity to external data sources and services, sensitive 
 
 3. Observe that Managed Service Identity (MSI) representing your Synapse workspace (it has a name similar to **asaworkspace*xxxxxxx***) has already been listed under Application and it has 4 selected Secret Management Operations.
 
-    ![The Synapse workspace account and its assigned secret permissions are highlighted.](images/DP-203-1.png "Access policies")
+    ![The Synapse workspace account and its assigned secret permissions are highlighted.](images/DP-203-4.png "Access policies")
 
 4. Select the drop-down that reads **4 selected** under **Secret Management Operations**, observe that **Get** (which allows your workspace to retrieve the values of secrets from Key Vault) and **List** (which allows your workspace to enumerate secrets) are set.
 
