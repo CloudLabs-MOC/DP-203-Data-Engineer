@@ -71,7 +71,7 @@ When dealing with connectivity to external data sources and services, sensitive 
 
 3. Observe that Managed Service Identity (MSI) representing your Synapse workspace (it has a name similar to **asaworkspace*xxxxxxx***) has already been listed under Application and it has 4 selected Secret Management Operations.
 
-    ![The Synapse workspace account and its assigned secret permissions are highlighted.](images/key-vault-access-policies.png "Access policies")
+    ![The Synapse workspace account and its assigned secret permissions are highlighted.](images/DP-203-1.png "Access policies")
 
 4. Select the drop-down that reads **4 selected** under **Secret Management Operations**, observe that **Get** (which allows your workspace to retrieve the values of secrets from Key Vault) and **List** (which allows your workspace to enumerate secrets) are set.
 
@@ -105,7 +105,7 @@ It is recommended to store any secrets that are part of your pipeline in Azure K
 
 3. Create a secret, with the name `PipelineSecret` and assign it a secret value of `IsNotASecret`, and select the **Create** button.
 
-   ![The Create a secret form is displayed populated with the specified values.](images/lab5_keyvaultcreatesecretforpipeline.png)
+   ![The Create a secret form is displayed populated with the specified values.](images/DP-203-2.png)
 
 4. Open the secret that you just created, drill into the current version, and copy the value in the Secret Identifier field. Save this value in a text editor, or retain it in your clipboard for a future step.
 
