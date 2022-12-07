@@ -227,9 +227,9 @@ In this task, you will configure Stream Analytics to use the event hub you creat
 
 12. Select **Save** on the bottom of the form when you are finished entering the values.
 
-        >**Note:** If a notification turns up showing connection test failed on the query page, this is expected, please move ahead to the next step.
+       >**Note:** If a notification turns up showing connection test failed on the query page, this is expected, please move ahead to the next step.
 
-        ![](images/DP-203M10.png)
+      ![](images/DP-203M10.png)
 
 13. Within the Stream Analytics job blade, select **Query** within the left-hand menu.
 
