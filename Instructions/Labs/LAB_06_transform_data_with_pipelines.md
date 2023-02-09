@@ -113,13 +113,13 @@ Azure Cosmos DB is one of the data sources that will be used in the Mapping Data
 
     ![The Manage menu item is highlighted.](images/manage-hub.png "Manage hub")
 
-2. Open **Linked services** and select **+ New** to create a new linked service. Select **Azure Cosmos DB (SQL API)** in the list of options, then select **Continue**.
+2. Open **Linked services** and select **+ New** to create a new linked service. Select **Azure Cosmos DB for NoSQL** in the list of options, then select **Continue**.
 
-    ![Manage, New, and the Azure Cosmos DB linked service option are highlighted.](images/create-cosmos-db-linked-service-step1.png "New linked service")
+    ![Manage, New, and the Azure Cosmos DB linked service option are highlighted.](images/dp-203-1.png "New linked service")
 
 3. Name the linked service `asacosmosdb01`, and then select the **asacosmosdb*xxxxxxx*** Cosmos DB account name and the **CustomerProfile** database. Then select **Test connection** to ensure success, before clicking **Create**.
 
-    ![New Azure Cosmos DB linked service.](images/create-cosmos-db-linked-service.png "New linked service")
+    ![New Azure Cosmos DB linked service.](images/dp-203-2.png "New linked service")
 
 ### Task 3: Create data sets
 
@@ -135,9 +135,9 @@ In this section, you'll create datasets for the SQL tables that will serve as da
 
     ![Create new Dataset.](images/new-dataset.png "New Dataset")
 
-3. Select **Azure Cosmos DB (SQL API)**, then click **Continue**.
+3. Select **Azure Cosmos DB for NoSQL**, then click **Continue**.
 
-    ![The Azure Cosmos DB SQL API option is highlighted.](images/new-cosmos-db-dataset.png "Integration dataset")
+    ![The Azure Cosmos DB SQL API option is highlighted.](images/dp-203-3.png "Integration dataset")
 
 4. Configure the dataset as follows, then select **OK**:
 
@@ -149,7 +149,7 @@ In this section, you'll create datasets for the SQL tables that will serve as da
 
 5. After creating the dataset, select **Preview data** under its **Container** tab.
 
-    ![The preview data button on the dataset is highlighted.](images/cosmos-dataset-preview-data-link1.png "Preview data")
+    ![The preview data button on the dataset is highlighted.](images/dp-203-4.png "Preview data")
 
 6. Preview data queries the selected Azure Cosmos DB collection and returns a sample of the documents within. The documents are stored in JSON format and include fields for **userId**, **cartId**, **preferredProducts** (an array of product IDs that may be empty), and **productReviews** (an array of written product reviews that may be empty).
 
