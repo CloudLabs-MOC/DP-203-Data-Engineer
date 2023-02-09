@@ -53,7 +53,7 @@ Having robust Internet security is a must for every technology system. One way t
 
 2. Notice that an IP Firewall rule of **Allow All** has already been created for you in the lab environment. If you wanted to add your specific IP address you would instead select **+ Add Client IP** from the taskbar menu (you do not need to do this now).
 
-    ![On the Synapse Workspace screen, the + Add Client IP button is selected from the toolbar menu.](images/lab5_synapsefirewalladdclientipmenu.png)
+    ![On the Synapse Workspace screen, the + Add Client IP button is selected from the toolbar menu.](images/add-client-ip-09.png)
 
     > **Note**: When connecting to Synapse from your local network, certain ports need to be open. To support the functions of Synapse Studio, ensure outgoing TCP ports 80, 443, and 1433, and UDP port 53 are open.
 
@@ -67,11 +67,13 @@ When dealing with connectivity to external data sources and services, sensitive 
 
     ![Key vault is selected in the resource group.](images/resource-group-key-vault.png "Key vault")
 
-2. On the left menu, select **Access Policies**.
+2. On the left menu, select **Access Configuration**, then **Vault access policy** and select **Go to access policies**.
+
+    ![Key vault is selected in the resource group.](images/access-configurations-01.png)
 
 3. Observe that Managed Service Identity (MSI) representing your Synapse workspace (it has a name similar to **asaworkspace*xxxxxxx***) has already been listed under Application and it has 4 selected Secret Management Operations.
 
-    ![The Synapse workspace account and its assigned secret permissions are highlighted.](images/DP-203-4.png "Access policies")
+    ![The Synapse workspace account and its assigned secret permissions are highlighted.](images/access-configurations-02.png)
 
 4. Select the drop-down that reads **4 selected** under **Secret Management Operations**, observe that **Get** (which allows your workspace to retrieve the values of secrets from Key Vault) and **List** (which allows your workspace to enumerate secrets) are set.
 
@@ -149,13 +151,13 @@ It is recommended to store any secrets that are part of your pipeline in Azure K
 
       ![The design surface of the pipeline is shown with a new pipeline arrow connecting the Web1 and Set variable1 activities. The pipeline is selected, and beneath the design surface, the Variables tab is selected with a variable with the name of SecretValue highlighted.](images/lab5_newpipelinevariable.png)
 
-12. Select the **Set variable1** activity and select the **Variables** tab. Fill out the form as follows:
+12. Select the **Set variable1** activity and select the **Settings** tab. Fill out the form as follows:
 
     1. **Name**: Select **SecretValue** (the variable that we just created).
 
     2. **Value**: Enter `@activity('Web1').output.value`
 
-        ![On the pipeline designer, the Set Variable1 activity is selected. Below the designer, the Variables tab is selected with the form set the previously specified values.](images/lab5_pipelineconfigsetvaractivity.png)
+        ![On the pipeline designer, the Set Variable1 activity is selected. Below the designer, the Variables tab is selected with the form set the previously specified values.](images/set-variable-01.png)
 
 13. Debug the pipeline by selecting **Debug** from the toolbar menu. When it runs observe the inputs and outputs of both activities from the **Output** tab of the pipeline.
 
