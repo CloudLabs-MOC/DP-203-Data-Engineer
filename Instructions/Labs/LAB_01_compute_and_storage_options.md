@@ -37,7 +37,7 @@ In this exercise, you will use an Azure Databricks workspace and perform Structu
 8. Set the **Terminate after** timeout to 30 minutes and select the default node type.
 9. Select **Create Cluster**.
 
-     ![The create cluster page specs](images/create-a-cluster-specs.png)
+     ![The create cluster page specs](images/create-cluster-09.png)
 
 10. Wait for the cluster to start. Please note you will have to wait 5 - 7 minutes for the cluster to start up before moving onto the next task.
 
