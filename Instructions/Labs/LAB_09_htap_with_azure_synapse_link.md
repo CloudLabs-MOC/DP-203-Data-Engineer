@@ -14,12 +14,12 @@ Before starting this lab, you should complete **Lab 6: *Transform data with Azur
 
 > **Note**: If you have ***not*** completed lab 6, but you <u>have</u> completed the lab setup for this course, you can complete these steps to create the required linked service and dataset.
 >
-> 1. In Synapse Studio, on the **Manage** hub, add a new **Linked service** for **Azure Cosmos DB (SQL API)** with the following settings:
+> 1. In Synapse Studio, on the **Manage** hub, add a new **Linked service** for **Azure Cosmos DB for NoSQL** with the following settings:
 >       - **Name**: asacosmosdb01
 >       - **Cosmos DB account name**: asacosmosdb*xxxxxxx*
 >       - **Database name**: CustomerProfile
 > 2. On the **Data** hub, create the following **Integration dataset**:
->       - **Source**: Azure Cosmos DB (SQL API)
+>       - **Source**: Azure Cosmos DB for NoSQL
 >       - **Name**: asal400_customerprofile_cosmosdb
 >       - **Linked service**: asacosmosdb01
 >       - **Collection**: OnlineUserProfile01
@@ -27,7 +27,7 @@ Before starting this lab, you should complete **Lab 6: *Transform data with Azur
 
 ## Exercise 1 - Configuring Azure Synapse Link with Azure Cosmos DB
 
-Tailwind Traders uses Azure Cosmos DB to store user profile data from their eCommerce site. The NoSQL document store provided by the Azure Cosmos DB SQL API provides the familiarity of managing their data using SQL syntax, while being able to read and write the files at a massive, global scale.
+Tailwind Traders uses Azure Cosmos DB to store user profile data from their eCommerce site. The NoSQL document store provided by the Azure Cosmos DB for NoSQL provides the familiarity of managing their data using SQL syntax, while being able to read and write the files at a massive, global scale.
 
 While Tailwind Traders is happy with the capabilities and performance of Azure Cosmos DB, they are concerned about the cost of executing a large volume of analytical queries over multiple partitions (cross-partition queries) from their data warehouse. They want to efficiently access all the data without needing to increase the Azure Cosmos DB request units (RUs). They have looked at options for extracting data from their containers to the data lake as it changes, through the Azure Cosmos DB change feed mechanism. The problem with this approach is the extra service and code dependencies and long-term maintenance of the solution. They could perform bulk exports from a Synapse Pipeline, but then they won't have the most up-to-date information at any given moment.
 
@@ -43,23 +43,19 @@ By combining the distributed scale of Cosmos DB's transactional processing with 
 
     ![The Azure Cosmos DB account is highlighted.](images/resource-group-cosmos.png "Azure Cosmos DB account")
 
-3. Select **Features** in the left-hand menu **(1)**, then select **Azure Synapse Link (2)**.
+3. Select **Azure Synapse Link** under Intergrations section **(1)**, then select **Enable** from the Enable Azure Synapse Link tab.
 
-    ![The Features blade is displayed.](images/cosmos-db-features.png "Features")
-
-4. Select **Enable**.
-
-    ![Enable is highlighted.](images/synapse-link-enable.png "Azure Synapse Link")
+    ![The Features blade is displayed.](images/dp-203-9.png "Features")
 
     Before we can create an Azure Cosmos DB container with an analytical store, we must first enable Azure Synapse Link.
 
 5. You must wait for this operation to complete before continuing, which should take about a minute. Check the status by selecting the Azure **Notifications** icon.
 
-    ![The Enabling Synapse Link process is running.](images/notifications-running.png "Notifications")
+    ![The Enabling Synapse Link process is running.](images/dp-203-8.png "Notifications")
 
     You will see a green checkmark next to "Enabling Synapse Link" when it successfully completes.
 
-    ![The operation completed successfully.](images/notifications-completed.png "Notifications")
+    ![The operation completed successfully.](images/dp-203-7.png "Notifications")
 
 6. Now on the left-hand menu,  select **Azure Synapse Link**.
 
