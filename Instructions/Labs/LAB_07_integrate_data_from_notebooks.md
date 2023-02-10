@@ -360,10 +360,6 @@ In this exercise, you will create a Synapse Spark notebook to make these calcula
 
     ![The parquet file is highlighted.](images/top5-products-parquet.png "Top 5 products parquet")
 
-18. Return to the notebook. Select **Stop session** on the upper-right of the notebook, and confirm you want to stop the session now when prompted. We want to stop the session to free up the compute resources for when we run the notebook inside the pipeline in the next section.
-
-    ![The stop session button is highlighted.](images/notebook-stop-session.png "Stop session")
-
 ### Task 2: Add the Notebook to the pipeline
 
 Tailwind Traders wants to execute this notebook after the Mapping Data Flow runs as part of their orchestration process. To do this, we will add this notebook to our pipeline as a new Notebook activity.
