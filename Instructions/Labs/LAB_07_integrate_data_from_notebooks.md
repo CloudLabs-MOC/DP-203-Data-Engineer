@@ -13,7 +13,7 @@ Before starting this lab, you should complete **Lab 6: *Transform data with Azur
 
 > **Note**: If you have ***not*** completed lab 6, but you <u>have</u> completed the lab setup for this course, you can complete these steps to create the required linked services and datasets.
 > 
-> 1. In Synapse Studio, on the **Manage** hub, add a new **Linked service** for **Azure Cosmos DB (SQL API)** with the following settings:
+> 1. In Synapse Studio, on the **Manage** hub, add a new **Linked service** for **Azure Cosmos DB for NoSQL** with the following settings:
 >       - **Name**: asacosmosdb01
 >       - **Cosmos DB account name**: asacosmosdb*xxxxxxx*
 >       - **Database name**: CustomerProfile
