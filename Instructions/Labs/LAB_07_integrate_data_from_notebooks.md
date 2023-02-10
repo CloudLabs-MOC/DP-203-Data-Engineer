@@ -19,7 +19,7 @@ Before starting this lab, you should complete **Lab 6: *Transform data with Azur
 >       - **Database name**: CustomerProfile
 > 2. On the **Data** hub, create the following **Integration datasets**:
 >       - asal400_customerprofile_cosmosdb:
->           - **Source**: Azure Cosmos DB (SQL API)
+>           - **Source**: Azure Cosmos DB for NoSQL
 >           - **Name**: asal400_customerprofile_cosmosdb
 >           - **Linked service**: asacosmosdb01
 >           - **Collection**: OnlineUserProfile01
