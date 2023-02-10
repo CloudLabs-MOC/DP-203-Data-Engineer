@@ -541,7 +541,6 @@ To do this, you will build a mapping data flow that performs the following tasks
         ![The source settings are configured as described.](images/data-flow-user-profiles-source-settings.png "Source settings")
 
 7. Select the **Source options** tab, then configure the following:
-    - **JSON Settings**: select `Array of documents`
     - **Wildcard paths**: Enter `online-user-profiles-02/*.json`
     - **JSON Settings:** Select **Array of documents** for **Document form**.
 
@@ -895,7 +894,7 @@ Let's start by executing our new Mapping Data Flow. In order to run the new data
 
     ![The name is set on the general tab as described.](images/pipeline-data-flow-general.png "Name on the General tab")
 
-7. On the **Settings** tab, select the **write_user_profile_to_asa** data flow, ensure **AutoResolveIntegrationRuntime** is selected. Choose the **Basic (General purpose)** compute type and set the core count to **4 (+ 4 Driver cores)**.
+7. On the **Settings** tab, select the **write_user_profile_to_asa** data flow, ensure **AutoResolveIntegrationRuntime** is selected. select compute size as **Custom** and then Choose the **Basic (General purpose)** compute type and set the core count to **4 (+ 4 Driver cores)**.
 
 8. Expand **Staging** and configure the following:
 
