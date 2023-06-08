@@ -50,16 +50,6 @@
    - Event hub namespace
    - Apache spark pool
   
-1. Please ensure to **pause** the SQLPool whenever the environment is not in use.
-
-   ![pause sqlpool](images/sqlpause.png "pause sqlpool") 
-
-1. Please ensure to **stop** the virtual machine from the **Resources** tab whenever the environment is not in use.
-
-    ![stop vm rg](images/vmstop-gen.png "stop vm") 
-   
-   **Environment Uptime**: Lab environments typically include Virtual Machines and SQL Pool. VMs and SQL Pools have uptime limits to keep the cloud costs under control. Lab Duration and uptime limits are defined based on the average required time to complete the labs along with some buffer. This Lab environment includes 10 Hours of SQL Pool and 18 hours of VM uptime limit. Once the uptime limit is reached, all resources will remain in the stopped/paused state.
-
 1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab.
 
    >**Note:** Please perform these steps before performing **lab 11**.
