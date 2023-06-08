@@ -2,21 +2,21 @@
 
 1. Once the environment is provisioned, a virtual machine and lab guide will get loaded into your browser. Use this virtual machine throughout the workshop to perform the lab.
    
-   ![LabEnvironment](images/vmandguide-env1.png)
+   ![LabEnvironment](images/dp_203_01.png)
    
 1. To get the lab environment details, you can select the Environment Details tab. Additionally, the credentials will also be sent to your email address provided during registration.
 
-   ![LabEnvironment](images/envdetails-env1.png)
+   ![LabEnvironment](images/dp_203_02.png)
 
 1. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
-   ![LabEnvironment](images/split-window.png)
+   ![LabEnvironment](images/dp_203_03.png)
 
 ### Log in to the Azure portal and verify the pre-deployed resources
 
 1. In the LabVM, double-click on the **Azure portal** shortcut on the desktop.
 
-    ![LabEnvironment](images/azureshortcut.png) 
+    ![LabEnvironment](images/dp_203_04.png) 
      
 1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
    
@@ -25,7 +25,7 @@
   
 1. If you see the pop-up below, click **Skip for now(14 days until this is required)**.
 
-   ![LabEnvironmentpop-up](images/skip.png)
+   ![LabEnvironmentpop-up](images/dp_203_05.png)
 
 1. If you see the pop-up  **Stay Signed in?**, click **No**.
 
