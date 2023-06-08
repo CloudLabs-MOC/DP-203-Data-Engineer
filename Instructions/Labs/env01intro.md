@@ -12,33 +12,34 @@
 
    ![LabEnvironment](images/split-window.png)
 
-### Log-in to the Azure portal and verify the pre-deployed resources
+### Log in to the Azure portal and verify the pre-deployed resources
 
-1. In the LabVM, double click on the **Azure portal** shortcut on the desktop.
+1. In the LabVM, double-click on the **Azure portal** shortcut on the desktop.
 
-     ![LabEnvironment](images/azureshortcut.png) 
+    ![LabEnvironment](images/azureshortcut.png) 
      
-1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
+1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
+   
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject>
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
   
-1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
+1. If you see the pop-up below, click **Skip for now(14 days until this is required)**.
 
    ![LabEnvironmentpop-up](images/skip.png)
 
 1. If you see the pop-up  **Stay Signed in?**, click **No**.
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!** , close the window to continue the lab. 
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab. 
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
 1. Now you can see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
   
-   ![lab1 rg](images/rg.png "resource group") 
+    ![lab1 rg](images/rg.png "resource group") 
      
 1. Navigate to the **data-engineering-synapse-<inject key="DeploymentID" enableCopy="false"/>** Resource group and verify whether you have all the below resources deployed successfully.
   
-    ![lab1 rg](images/rg-env1.png "env01 resource group") 
+     ![lab1 rg](images/rg-env1.png "env01 resource group") 
 
    - Azure Databricks Service
    - Stream analytics job
@@ -55,30 +56,31 @@
 
 1. Please ensure to **stop** the virtual machine from the **Resources** tab whenever the environment is not in use.
 
-   ![stop vm rg](images/vmstop-gen.png "stop vm") 
+    ![stop vm rg](images/vmstop-gen.png "stop vm") 
    
-   **Environment Uptime** : Lab environments typically include Virtual Machines and SQL Pool. VMs and SQL Pool have uptime limits to keep the cloud costs under control.Lab Duration and uptime limits are defined based on the average required time to complete the labs along with some buffer. This Lab environment includes 10 Hours of SQL Pool and 18 hours of VM uptime limit. Once the uptime limit is reached, all resources will remain in stopped/pause resource.
+   **Environment Uptime**: Lab environments typically include Virtual Machines and SQL Pool. VMs and SQL Pools have uptime limits to keep the cloud costs under control. Lab Duration and uptime limits are defined based on the average required time to complete the labs along with some buffer. This Lab environment includes 10 Hours of SQL Pool and 18 hours of VM uptime limit. Once the uptime limit is reached, all resources will remain in the stopped/paused state.
 
 1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab.
 
->**Note!**: Please perform these steps before performing **lab 11**.
+   >**Note:** Please perform these steps before performing **lab 11**.
 
-   In the left-hand navigation menu of your Databricks workspace, select Compute, then select your cluster in the list. If it's not running, start it now.
+1. In the left-hand navigation menu of your Databricks workspace, select Compute, then select your cluster in the list. If it's not running, start it now.
+   
    ![Compute](images/Dp203module11.1.png) 
    
-   Select the Libraries tab (1), then select Install New (2). In the Install Library dialog, select Maven under Library Source (3). Under Coordinates, paste       com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.15 (4), then select Install.
+1. Select the Libraries tab (1), then select Install New (2). In the Install Library dialog, select Maven under Library Source (3). Under Coordinates, paste com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.15 (4), then select Install.
 
-   ![Compute](images/Dp203module11.2.png) 
+    ![Compute](images/Dp203module11.2.png) 
 
-  Wait until the library successfully installs before continuing
+1. Wait until the library successfully installs before continuing
   
-   ![Compute](https://raw.githubusercontent.com/CloudLabs-MOC/DP-203-Data-Engineer/intro/Instructions/Labs/DP203module11.3.png) 
+    ![Compute](https://raw.githubusercontent.com/CloudLabs-MOC/DP-203-Data-Engineer/intro/Instructions/Labs/DP203module11.3.png) 
 
 
 
 ## Modules Included
 
-  In this hands-on lab you will be performing the below modules:
+  In this hands-on lab, you will be performing the below modules:
 
 - **Module 01: Explore compute and storage options for data engineering workloads**  
 - **Module 03: Data Exploration and Transformation in Azure Databricks**
