@@ -36,7 +36,7 @@
   
    ![lab1 rg](images/rg.png "resource group") 
      
-1. Navigate to the **data-engineering-synapse-<inject key="DeploymentID"></inject>** Resource group and verify whether you have all the below resources deployed successfully.
+1. Navigate to the **data-engineering-synapse-<inject key="DeploymentID" enableCopy="false"/>** Resource group and verify whether you have all the below resources deployed successfully.
   
     ![lab1 rg](images/rg-env1.png "env01 resource group") 
 
