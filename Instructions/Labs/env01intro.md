@@ -58,7 +58,7 @@
    
    ![Compute](images/Dp203module11.1.png) 
    
-1. Select the Libraries tab (1), then select Install New (2). In the Install Library dialog, select Maven under Library Source (3). Under Coordinates, paste com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.15 (4), then select Install.
+1. Select the **Libraries (1)** tab, then select **Install New (2)**. In the Install Library dialog, select Maven under **Library (3)** Source. Under Coordinates, paste com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.15 **(4)**, then select Install.
 
     ![Compute](images/Dp203module11.2.png) 
 
